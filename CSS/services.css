@@ -1,0 +1,8 @@
+
+.services-container{
+    display: grid;
+    grid-template-areas: 
+        "head head head"
+        "ext-washing seat-cleaning vacuuming"
+}
+
