@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+    font-size: 25px;
+}
 
 .business-name{
     display: flex;
@@ -7,4 +12,45 @@
 
 h1#business-name{
     font-size: 3.8rem;
+}
+
+.AboutUs{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    gap: 10rem;
+}
+
+#AboutUs-img{
+    border: 4px solid black;
+    border-radius: 20px;
+}
+
+article > h2{
+    display: flex;
+    color: rgb(0, 20, 80);
+    justify-content: center;
+    font-size: 40px;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.map-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.map-button-container .map-button{
+    background-color: rgb(34, 78, 211);
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 30px;
+    font-weight: 600;
 }
