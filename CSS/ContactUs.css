@@ -5,11 +5,15 @@
     padding-left: 10rem;
     padding-right: 10rem;
     gap: 10rem;
+    justify-content: space-evenly;
 }
 
 #ContactUs-img{
     border: 4px solid black;
     border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    object-fit: contain;
 }
 
 article > h2{
@@ -19,11 +23,14 @@ article > h2{
     font-size: 40px;
 }
 
-article{
+.request-info-form{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: justify;
+}
+
+.date-time-fields{
+    display: flex;
+    flex-direction: row;
 }
 
 .request-button-container{
