@@ -17,6 +17,7 @@
     border: 0;
     font-size: 1.5rem;
     border-radius: 10px;
+    z-index: 2;
 
     /* It manage the time of the animation when the hover is triggered */
     transition: background-color .5s ease-in-out .1s;
