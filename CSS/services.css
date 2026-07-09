@@ -6,7 +6,11 @@
     grid-template-areas: 
         "head head head"
         "ext-washing seat-cleaning vacuuming";
-        gap: 1.5rem;
+        column-gap: 5rem;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
         align-items: stretch;
     scroll-margin-top: 5.5rem;
 }
@@ -18,7 +22,12 @@
 .item{
     display: flex;
     flex-direction: column;
-    padding: 7rem;
+    align-items: center;
+}
+
+.item img {
+    max-width: 200px;
+    width: 100%;
 }
 
 .item-1{
