@@ -59,4 +59,10 @@
 
 .plan-content button{
     margin-top: auto;
+    background-color: darkblue;
+    padding: 1rem;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+    border-radius: 30px;
 }
