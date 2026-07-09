@@ -1,9 +1,11 @@
 
 .ContactUs-container{
+    background-color: white;
     display: flex;
     flex-direction: row;
     padding-left: 10rem;
     padding-right: 10rem;
+    padding: 4rem 2rem;
     gap: 10rem;
     justify-content: space-evenly;
     scroll-margin-top: 5.5rem;
@@ -12,7 +14,8 @@
 #ContactUs-img{
     border: 4px solid black;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 400px;
+    max-height: 700px;
     width: 100%;
     object-fit: contain;
 }

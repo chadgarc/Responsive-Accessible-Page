@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./CSS/ContactUs.css">
     <link rel="stylesheet" href="./CSS/Price.css">
     <link rel="stylesheet" href="./CSS/services.css">
+    <link rel="stylesheet" href="./CSS/general.css">
 
     <!-- This is a library with icons -->
     <link rel="stylesheet"
@@ -19,17 +20,6 @@
             integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer">
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body{
-            margin: 0;
-            background-color: rgb(243, 243, 243);
-            font-size: 25px;
-        }
-    </style>
 
 </head>
 <body>
@@ -60,9 +50,9 @@
 
     <main>
         <section class="slide-show">
-            <img class="mySlides" src="./assets/images/slideshow/car-wash.jpg" alt="Washing car">
-            <img class="mySlides" src="./assets/images/slideshow/interior.jpg" alt="Car interior">
-            <img class="mySlides" src="./assets/images/slideshow/sponge-car-wash.jpg" alt="Washing car with sponge">
+            <img class="mySlides" src="./assets/images/slideshow/car-wash.webp" loading="lazy" alt="Washing car">
+            <img class="mySlides" src="./assets/images/slideshow/interior.webp" loading="lazy" alt="Car interior">
+            <img class="mySlides" src="./assets/images/slideshow/sponge-car-wash.webp" loading="lazy" alt="Washing car with sponge">
 
             <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
@@ -74,7 +64,7 @@
         </section>
         
         <section class="AboutUs" id="AboutUs">            
-            <img id="AboutUs-img" src="./assets/images/homepage/AboutGarage.jpg" alt="Luxurious car inside a garage">
+            <img id="AboutUs-img" src="./assets/images/homepage/AboutGarage.webp" loading="lazy" alt="Luxurious car inside a garage">
             <article>
                 <h2>About Us</h2>
                 <p>
@@ -95,43 +85,74 @@
                 <h2>Premium washing service</h2>
             </article>
             <div class="item item-1">
-                <img src="assets/images/icons/car-wash.svg" alt="Car wash icon">
+                <img src="assets/images/icons/car-wash.svg" loading="lazy" alt="Car wash icon">
                 <p>Exterior Washing</p>
             </div>
 
             <div class="item item-2">
-                <img src="./assets/images/icons/seat-cleaning.svg" alt="Seat cleaning icon">
+                <img src="./assets/images/icons/seat-cleaning.svg" loading="lazy" alt="Seat cleaning icon">
                 <p>Seat cleaning</p>
             </div>
 
             <div class="item item-3">
-                <img src="./assets/images/icons/vaccuming.svg" alt="Vacuuming icon">
+                <img src="./assets/images/icons/vaccuming.svg" loading="lazy" alt="Vacuuming icon">
                 <p>Vacuuming</p>
             </div>
 
         </section>
         
         <section class="price-container" id="Price">
-            <article>
+            <article class="plan price-header">
                 <h3>Washing Plans</h3>
                 <h2>Choose your plan</h2>
             </article>
-            <div>
-                
+            <div class="plan plan-1">
+                <div>
+                    <h3>Basic cleaning</h3>
+                    <h4>$14</h4>
+                    <ul>
+                        <li>Seat Washing</li>
+                        <li>Vacuum Cleaning</li>
+                        <li>Exterior Cleaning</li>
+                    </ul>
+
+                    <button>Book Now</button>
+                </div>
             </div>
 
-            <div>
-                
+            <div class="plan plan-2">
+                <div>
+                    <h3>Executive cleaning</h3>
+                    <h4>$25</h4>
+                    <ul>
+                        <li>Seat Washing</li>
+                        <li>Vacuum Cleaning</li>
+                        <li>Exterior Cleaning</li>
+                        <li>Interior Wet Cleaning</li>
+                    </ul>
+                    <button>Book Now</button>
+                </div>
             </div>
 
-            <div>
-                
+            <div class="plan plan-3">
+                <div>
+                    <h3>Presidential cleaning</h3>
+                    <h4>$35</h4>
+                    <ul>
+                        <li>Seat Washing</li>
+                        <li>Vacuum Cleaning</li>
+                        <li>Exterior Cleaning</li>
+                        <li>Interior Wet Cleaning</li>
+                        <li>Window Wiping</li>
+                    </ul>
+                    <button>Book Now</button>
+                </div>
             </div>
 
         </section>
 
         <section class="ContactUs-container" id="ContactUs">            
-            <img id="ContactUs-img" src="./assets/images/homepage/car-washing.jpg" alt="Black car being washed">
+            <img id="ContactUs-img" src="./assets/images/homepage/car-washing.webp" loading="lazy" alt="Black car being washed">
             <article>
                 <h2>Request car wash</h2>
                 <form class="request-info-form" action="">

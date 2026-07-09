@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth;
+    will-change: scroll-position;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+    font-size: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    will-change: transform;
+}
