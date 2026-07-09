@@ -6,6 +6,7 @@
     padding-right: 10rem;
     gap: 10rem;
     justify-content: space-evenly;
+    scroll-margin-top: 5.5rem;
 }
 
 #ContactUs-img{

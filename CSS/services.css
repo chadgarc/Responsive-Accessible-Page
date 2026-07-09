@@ -1,8 +1,34 @@
 
 .services-container{
+    background-color: white;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
         "head head head"
-        "ext-washing seat-cleaning vacuuming"
+        "ext-washing seat-cleaning vacuuming";
+        gap: 1.5rem;
+        align-items: stretch;
+    scroll-margin-top: 5.5rem;
 }
 
+.service-header{
+    grid-area: head;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 7rem;
+}
+
+.item-1{
+    grid-area: ext-washing;
+}
+
+.item-2{
+    grid-area: seat-cleaning;
+}
+
+.item-3{
+    grid-area: vacuuming;
+}
