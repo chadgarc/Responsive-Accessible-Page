@@ -1,0 +1,10 @@
+
+.business-name{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+h1#business-name{
+    font-size: 3.8rem;
+}
