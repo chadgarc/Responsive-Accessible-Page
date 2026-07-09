@@ -14,7 +14,7 @@ img {
     display: block;
 }
 
-footer{
+footer div{
     display: flex;
     flex-direction: column;
     background-color: royalblue;
@@ -26,6 +26,12 @@ footer{
 footer a{
     text-decoration: none;
     color: white;
+}
+
+/* Accessibility */
+a:focus, button:focus, input:focus, textarea:focus{
+    outline: 3px solid royalblue;
+    outline-offset: 3px;
 }
 
 @media (max-width: 768px) {

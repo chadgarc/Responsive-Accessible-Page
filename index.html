@@ -24,7 +24,7 @@
 </head>
 <body>
     
-    <header class="header-container"> 
+    <header class="header-container" role="banner"> 
         <img id="logo" alt="company-logo" src="./assets/logo.png">
         <nav role="navigation" class="navbar" aria-label="Main navigation">
             <ul class="nav-list">
@@ -37,36 +37,38 @@
         <div class="social-links" aria-label="Social Media Links">
             <a href="https://www.facebook.com" 
             rel="noreferrer noopener" 
-            aria-label="facebook">
+            aria-label="facebook page">
                 <i class="bi bi-facebook"></i>
             </a>
             <a href="https://www.instagram.com//"
             rel="noreferrer noopener"
-            aria-label="instagram">
+            aria-label="instagram page">
                 <i class="bi bi-instagram"></i>
             </a>
         </div>
     </header>
 
     <main>
-        <section class="slide-show">
-            <img class="mySlides" src="./assets/images/slideshow/car-wash.webp" loading="lazy" alt="Washing car">
-            <img class="mySlides" src="./assets/images/slideshow/interior.webp" loading="lazy" alt="Car interior">
-            <img class="mySlides" src="./assets/images/slideshow/sponge-car-wash.webp" loading="lazy" alt="Washing car with sponge">
+        <section class="slide-show" aria-label="Image slideshow" role="region">
+            <div class="slides" aria-live="polite">
+                <img class="mySlides" src="./assets/images/slideshow/car-wash.webp" loading="lazy" alt="Washing car">
+                <img class="mySlides" src="./assets/images/slideshow/interior.webp" loading="lazy" alt="Car interior">
+                <img class="mySlides" src="./assets/images/slideshow/sponge-car-wash.webp" loading="lazy" alt="Washing car with sponge">
+            </div>
 
-            <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="display-right" onclick="plusDivs(+1)">&#10095;</button>
+            <button class="display-left" onclick="plusDivs(-1)" aria-label="previous slide" >&#10094;</button>
+            <button class="display-right" onclick="plusDivs(+1)" aria-label="next slide" >&#10095;</button>
             <script src="./Scripts/slideShow.js"></script>
         </section>
 
-        <section class="business-name">
+        <header class="business-name">
             <h1 id="business-name">Car Wash Express, LLC</h1>
-        </section>
+        </header>
         
-        <section class="AboutUs" id="AboutUs">            
+        <section class="AboutUs" id="AboutUs" aria-labelledby="about-title">            
             <img id="AboutUs-img" src="./assets/images/homepage/AboutGarage.webp" loading="lazy" alt="Luxurious car inside a garage">
             <article>
-                <h2>About Us</h2>
+                <h2 id="about-title">About Us</h2>
                 <p>
                     Car Wash Express offers premium car cleaning services, providing meticulous attention to detail to ensure 
                     your vehicle shines like new. Our experienced team uses top-quality products and advanced techniques 
@@ -79,34 +81,34 @@
             </article>
         </section>
 
-        <section class="services-container" id="Services">
+        <section class="services-container" id="Services" aria-labelledby="services-title">
             <article class="item service-header">
+                <h2 id="services-title">Premium washing service</h2>
                 <h3>Our Services</h3>
-                <h2>Premium washing service</h2>
             </article>
-            <div class="item item-1">
+            <article class="item item-1">
                 <img src="assets/images/icons/car-wash.svg" loading="lazy" alt="Car wash icon">
                 <p>Exterior Washing</p>
-            </div>
+            </article>
 
-            <div class="item item-2">
+            <article class="item item-2">
                 <img src="./assets/images/icons/seat-cleaning.svg" loading="lazy" alt="Seat cleaning icon">
                 <p>Seat cleaning</p>
-            </div>
+            </article>
 
-            <div class="item item-3">
+            <article class="item item-3">
                 <img src="./assets/images/icons/vaccuming.svg" loading="lazy" alt="Vacuuming icon">
                 <p>Vacuuming</p>
-            </div>
+            </article>
 
         </section>
         
-        <section class="price-container" id="Price">
+        <section class="price-container" id="Price" aria-labelledby="price-title">
             <article class="plan price-header">
-                <h3>Washing Plans</h3>
-                <h2>Choose your plan</h2>
+                <h2 id="price-title">Washing Plans</h2>
+                <h3>Choose your plan</h3>
             </article>
-            <div class="plan plan-1">
+            <article class="plan plan-1">
                 <div class="plan-content">
                     <h3>Basic cleaning</h3>
                     <h4>$14</h4>
@@ -118,9 +120,9 @@
 
                     <button>Book Now</button>
                 </div>
-            </div>
+            </article>
 
-            <div class="plan plan-2">
+            <article class="plan plan-2">
                 <div class="plan-content">
                     <h3>Executive cleaning</h3>
                     <h4>$25</h4>
@@ -132,9 +134,9 @@
                     </ul>
                     <button>Book Now</button>
                 </div>
-            </div>
+            </article>
 
-            <div class="plan plan-3">
+            <article class="plan plan-3">
                 <div class="plan-content">
                     <h3>Presidential cleaning</h3>
                     <h4>$35</h4>
@@ -147,35 +149,36 @@
                     </ul>
                     <button>Book Now</button>
                 </div>
-            </div>
+            </article>
 
         </section>
 
-        <section class="ContactUs-container" id="ContactUs">            
+        <section class="ContactUs-container" id="ContactUs" aria-labelledby="contact-title">            
             <img id="ContactUs-img" src="./assets/images/homepage/car-washing.webp" loading="lazy" alt="Black car being washed">
             <article>
-                <h2>Request car wash</h2>
-                <form class="request-info-form" action="">
+                <h2 id="contact-title">Request car wash</h2>
+                <form class="request-info-form" role="form">
                     
-                    <label for="">Name:</label>
-                    <input type="text">
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" aria-required="true" type="text">
                     
-                    <label for="">Phone</label>
-                    <input type="phone">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" aria-required="true" type="tel">
                     
-                    <label for="">Email</label>
-                    <input type="email">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" aria-required="true" type="email">
 
                     <div class="date-time-fields">
-                        <label for="">Time</label>
-                        <input type="time">
+                        <label for="time">Time</label>
+                        <input id="time" name="time" aria-required="true" type="time">
 
-                        <label for="">Date</label>
-                        <input type="date">
+                        <label for="date">Date</label>
+                        <input id="date" name="date" aria-required="true" type="date">
                     </div>
 
-                    <label for="">Inquiry</label>
-                    <textarea rows="5" id="inquiry"></textarea>
+                    <label for="inquiry">Inquiry</label>
+                    <textarea rows="5" id="inquiry" name="inquiry" aria-describedby="inquiry-help" aria-required="true"></textarea>
+                    <p id="inquiry-help">Write your inquiry here.</p>
 
                 </form>
                 <div class="request-button-container">
@@ -190,14 +193,19 @@
 
     </main>
 
-    <footer role="contentinfo" aria-label="Footer">
-        <address class="footer-contact">
-            <p>Accessible Design Co.</p>
-            <p>Pineville, NC</p>
-            <p>Email: <a href="mailto:info@accessibleco.com">info@accessibleco.com</a></p>
-        </address>
-        <p class="footer-copy">&copy; 2026 Accessible Design Co. All rights reserved.</p>
+    <footer role="contentinfo" aria-labelledby="footer-title">
+        <div class="footer-container">
+            <h2 id="footer-title">Visit us</h2>
+            <address class="footer-contact">
+                <p>Accessible Design Co.</p>
+                <p>Pineville, NC</p>
+                <p>Email: <a href="mailto:info@accessibleco.com">info@accessibleco.com</a></p>
+            </address>
+
+            <p class="footer-copy">&copy; 2026 Accessible Design Co. All rights reserved.</p>
+        </div>
     </footer>
+
 
 </body>
 </html>
