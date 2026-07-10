@@ -20,7 +20,7 @@
         /* This won't deform the boxes */
         min-width: 255px;
         padding: 1rem 1rem;
-}
+    }
 
 }
 
@@ -41,11 +41,20 @@
         display: block;
     }
 
-    .nav-list{
-        display: none;
+    /* This will be the configuration of my navbar while this screen is in use */
+    .nav-list {
         flex-direction: column;
         height: 30vh;
         gap: 3rem;
+    }
+
+    /* 
+        I created this subclass to change the hambuguer behavior in javascript 
+        using toggle method, this way I won't make an inline change that will
+        override how it looks
+    */
+    .nav-list.show{
+        display: none;
     }
 
     .social-links{
