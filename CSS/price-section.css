@@ -72,6 +72,7 @@
 }
 
 .plan-content button{
+    /* This marfin-top keeps the button at the end of the box */
     margin-top: auto;
     background-color: darkblue;
     padding: 1rem;

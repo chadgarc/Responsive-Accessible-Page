@@ -1,21 +1,23 @@
 /* Stack from here so they won't look too close to each other*/
 @media (max-width: 1162px) {
+
+    .AboutUs-info{
+        width: 75%;
+    }
+
     /* 3 columns to stack */
     .price-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
-        "header"
-        "basic"
-        "exec"
-        "pres";
+        "header header"
+        "basic exec"
+        "pres pres";
         gap: 3rem;
         padding: 5%;
     }
 
     .plan-1, .plan-2, .plan-3 {
-        width: auto;
         /* This won't deform the boxes */
-        height: 650px;
         min-width: 255px;
         padding: 1rem 1rem;
 }
@@ -31,13 +33,19 @@
     */
 @media (max-width: 768px) {
     .header-container{
-        position:static;
         flex-direction: column;
     }
 
-    .nav-list {
+    /* This will show the burger button */
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list{
+        display: none;
         flex-direction: column;
-        gap: 1rem;
+        height: 30vh;
+        gap: 3rem;
     }
 
     .social-links{
@@ -46,11 +54,22 @@
 
     /* slide show smaller */
     .slides {
-        height: 58vh;
+        height: 64vh;
     }
 
     h1#business-name{
         font-size: 2rem;
+    }
+
+    .price-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "basic"
+        "exec"
+        "pres";
+        gap: 3rem;
+        padding: 5%;
     }
 
     /* 3 columns to stack */

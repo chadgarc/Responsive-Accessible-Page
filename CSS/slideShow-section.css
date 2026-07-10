@@ -7,7 +7,7 @@
 */
 .slides{
     width: 100%;
-    height: min(65vh, 600px);
+    height: min(70vh, 600px);
     position: relative;
     z-index: 1;
 }

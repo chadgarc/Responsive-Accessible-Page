@@ -24,12 +24,25 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer">
 
+    <!-- My Scripts -->
+    <!-- defer is very importan it will be excecuted after the page is loaded -->
+    <script src="./Scripts/mobileMenu.js" defer></script>
+    <script src="./Scripts/slideShow.js" defer></script>
+
 </head>
 <body>
     
     <header class="header-container" role="banner"> 
         
-        <img id="logo" alt="company-logo" src="./assets/logo.png">
+        <div class="menu-logo">
+
+            <a href="#top"><img id="logo" alt="company-logo" src="./assets/logo.png"></a>
+            
+            <button class="mobile-menu" onclick="openMenu()">
+                <i class="bi bi-list"></i>
+            </button>
+            
+        </div>
 
         <nav role="navigation" class="navbar" aria-label="Main navigation">
             <ul class="nav-list">
@@ -40,18 +53,21 @@
             </ul>
         </nav>
 
+        <!-- Social links icons, from bootstrap -->
         <div class="social-links" aria-label="Social Media Links">
             <a href="https://www.facebook.com" 
             rel="noreferrer noopener" 
             aria-label="facebook page">
                 <i class="bi bi-facebook"></i>
             </a>
+
             <a href="https://www.instagram.com//"
             rel="noreferrer noopener"
             aria-label="instagram page">
                 <i class="bi bi-instagram"></i>
             </a>
         </div>
+
     </header>
 
     <main>
@@ -70,7 +86,7 @@
                 
                 <button class="display-left" onclick="plusDivs(-1)" aria-label="previous slide" >&#10094;</button>
                 <button class="display-right" onclick="plusDivs(+1)" aria-label="next slide" >&#10095;</button>
-                <script src="./Scripts/slideShow.js"></script>
+                
             </div>
 
         </section>
@@ -257,7 +273,6 @@
         </div>
         </div>
     </footer>
-
 
 </body>
 </html>
