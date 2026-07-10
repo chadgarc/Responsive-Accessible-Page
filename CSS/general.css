@@ -36,7 +36,7 @@ a:focus, button:focus, input:focus, textarea:focus{
 
 @media (max-width: 768px) {
     .header-container{
-        position: static;
+        position:static;
         flex-direction: column;
     }
 
@@ -47,12 +47,11 @@ a:focus, button:focus, input:focus, textarea:focus{
 
     .social-links{
         display: none;
-        position: static;
     }
 
     /* slide show smaller */
-    .mySlides {
-        height: 400px;
+    .slides {
+        height: 58vh;
     }
 
     h1#business-name{
