@@ -19,10 +19,10 @@
 
     <!-- This is a library with icons -->
     <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
-            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer">
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
 
     <!-- My Scripts -->
     <!-- defer is very importan it will be excecuted after the page is loaded -->
@@ -36,15 +36,28 @@
         
         <div class="menu-logo">
 
-            <a href="#top"><img id="logo" alt="company-logo" src="./assets/logo.png"></a>
+            <a href="#top">
+                <img 
+                id="logo" 
+                alt="company-logo" 
+                src="./assets/logo.png"
+                aria-label="Company logo">
+            </a>
             
-            <button class="mobile-menu" onclick="openMenu()">
+            <button class="mobile-menu"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="main-navigation"
+                    onclick="openMenu()">
                 <i class="bi bi-list"></i>
             </button>
             
         </div>
 
-        <nav role="navigation" class="navbar" aria-label="Main navigation">
+        <nav role="navigation" 
+            class="navbar" 
+            aria-label="Main navigation"
+            id="main-navigation">
             <ul class="nav-list">
                 <li><a href="#AboutUs">About us</a></li>
                 <li><a href="#Services">Services</a></li>
@@ -56,14 +69,14 @@
         <!-- Social links icons, from bootstrap -->
         <div class="social-links" aria-label="Social Media Links">
             <a href="https://www.facebook.com" 
-            rel="noreferrer noopener" 
-            aria-label="facebook page">
+                rel="noreferrer noopener" 
+                aria-label="facebook page">
                 <i class="bi bi-facebook"></i>
             </a>
 
             <a href="https://www.instagram.com//"
-            rel="noreferrer noopener"
-            aria-label="instagram page">
+                rel="noreferrer noopener"
+                aria-label="instagram page">
                 <i class="bi bi-instagram"></i>
             </a>
         </div>
@@ -74,18 +87,36 @@
 
         <!-- Hero Section -->
 
-        <section class="slide-show" aria-label="Image slideshow" role="region">
+        <section class="slide-show" 
+            aria-label="Image slideshow" 
+            role="region">
 
             <!-- In order to create a slideshow I need a container and the images sharing the same class name -->
             <!-- The buttons mush be inside the same container the images are, so their absolute position will -->
             <!-- be relative to this container, I got the script from w3school -->
             <div class="slides" aria-live="polite">
-                <img class="mySlides" src="./assets/images/slideshow/car-wash.webp" loading="lazy" alt="Washing car">
-                <img class="mySlides" src="./assets/images/slideshow/interior.webp" loading="lazy" alt="Car interior">
-                <img class="mySlides" src="./assets/images/slideshow/sponge-car-wash.webp" loading="lazy" alt="Washing car with sponge">
+                <img class="mySlides" 
+                    src="./assets/images/slideshow/car-wash.webp" 
+                    loading="lazy" 
+                    alt="Washing car">
                 
-                <button class="display-left" onclick="plusDivs(-1)" aria-label="previous slide" >&#10094;</button>
-                <button class="display-right" onclick="plusDivs(+1)" aria-label="next slide" >&#10095;</button>
+                <img class="mySlides" 
+                    src="./assets/images/slideshow/interior.webp" 
+                    loading="lazy" 
+                    alt="Car interior">
+
+                <img class="mySlides" 
+                    src="./assets/images/slideshow/sponge-car-wash.webp" 
+                    loading="lazy" 
+                    alt="Washing car with sponge">
+                
+                <button class="display-left" 
+                    onclick="plusDivs(-1)" 
+                    aria-label="previous slide" >&#10094;</button>
+
+                <button class="display-right" 
+                    onclick="plusDivs(+1)" 
+                    aria-label="next slide" >&#10095;</button>
                 
             </div>
 
@@ -97,9 +128,14 @@
         
         <!-- About us Section -->
 
-        <section class="AboutUs" id="AboutUs" aria-labelledby="about-title">            
+        <section class="AboutUs" 
+            id="AboutUs" 
+            aria-labelledby="about-title">            
             
-            <img id="AboutUs-img" src="./assets/images/homepage/AboutGarage.webp" loading="lazy" alt="Luxurious car inside a garage">
+            <img id="AboutUs-img" 
+                src="./assets/images/homepage/AboutGarage.webp" 
+                loading="lazy" 
+                alt="Luxurious car inside a garage">
             
             <!-- Area containing the text of this section -->
             <article class="AboutUs-info">
@@ -118,7 +154,9 @@
 
         <!-- Services Section -->
 
-        <section class="services-container" id="Services" aria-labelledby="services-title">
+        <section class="services-container" 
+            id="Services" 
+            aria-labelledby="services-title">
 
             <article class="item service-header">
                 <h2 id="services-title">Premium washing service</h2>
@@ -127,24 +165,32 @@
 
             <!-- Area images and description of every service-->
             <article class="item item-1">
-                <img src="assets/images/icons/car-wash.svg" loading="lazy" alt="Car wash icon">
+                <img src="assets/images/icons/car-wash.svg" 
+                    loading="lazy" 
+                    alt="Car wash icon">
                 <p>Exterior Washing</p>
             </article>
 
             <article class="item item-2">
-                <img src="./assets/images/icons/seat-cleaning.svg" loading="lazy" alt="Seat cleaning icon">
+                <img src="./assets/images/icons/seat-cleaning.svg" 
+                    loading="lazy" 
+                    alt="Seat cleaning icon">
                 <p>Seat cleaning</p>
             </article>
 
             <article class="item item-3">
-                <img src="./assets/images/icons/vaccuming.svg" loading="lazy" alt="Vacuuming icon">
+                <img src="./assets/images/icons/vaccuming.svg" 
+                    loading="lazy" 
+                    alt="Vacuuming icon">
                 <p>Vacuuming</p>
             </article>
 
         </section>
         
         <!-- Price Section -->
-        <section class="price-container" id="Price" aria-labelledby="price-title">
+        <section class="price-container" 
+            id="Price" 
+            aria-labelledby="price-title">
 
             <!-- This is the text before the plan boxes -->
             <article class="plan price-header">
@@ -200,9 +246,14 @@
 
         <!-- Contact form Section -->
 
-        <section class="ContactUs-container" id="ContactUs" aria-labelledby="contact-title">            
+        <section class="ContactUs-container" 
+            id="ContactUs" 
+            aria-labelledby="contact-title">            
             
-            <img id="ContactUs-img" src="./assets/images/homepage/car-washing.webp" loading="lazy" alt="Black car being washed">
+            <img id="ContactUs-img" 
+                src="./assets/images/homepage/car-washing.webp" 
+                loading="lazy" 
+                alt="Black car being washed">
             
             <!-- Form area of this section -->
             <article class="contact-us-form">
@@ -227,7 +278,11 @@
                     </div>
 
                     <label for="inquiry">Inquiry</label>
-                    <textarea rows="5" id="inquiry" name="inquiry" aria-describedby="inquiry-help" aria-required="true"></textarea>
+                    <textarea rows="5" 
+                        id="inquiry" 
+                        name="inquiry" 
+                        aria-describedby="inquiry-help" 
+                        aria-required="true"></textarea>
                     <p id="inquiry-help">Write your inquiry here.</p>
 
                 </form>
@@ -247,7 +302,9 @@
 
     <!-- Footer Section -->
 
-    <footer role="contentinfo" aria-labelledby="footer-title">
+    <footer role="contentinfo" 
+        aria-labelledby="footer-title">
+
         <div class="footer-container">
             <h2 id="footer-title">Visit us</h2>
             <address class="footer-contact">
@@ -259,15 +316,18 @@
             <p class="footer-copy">&copy; 2026 Accessible Design Co. All rights reserved.</p>
 
             <!-- Social links with the clickable logo -->
-            <div class="social-links" aria-label="Social Media Links">
+            <div class="social-links" 
+                aria-label="Social Media Links">
+
             <a href="https://www.facebook.com" 
-            rel="noreferrer noopener" 
-            aria-label="facebook page">
+                rel="noreferrer noopener" 
+                aria-label="facebook page">
                 <i class="bi bi-facebook"></i>
             </a>
+
             <a href="https://www.instagram.com//"
-            rel="noreferrer noopener"
-            aria-label="instagram page">
+                rel="noreferrer noopener"
+                aria-label="instagram page">
                 <i class="bi bi-instagram"></i>
             </a>
         </div>
