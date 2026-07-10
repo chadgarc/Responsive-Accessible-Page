@@ -6,6 +6,7 @@
     
     <title>Supreme Car Wax</title>
     
+    <!-- I need to link all my css's files -->
     <link rel="stylesheet" href="./CSS/navigation-bar-section.css">
     <link rel="stylesheet" href="./CSS/slideShow-section.css">
     <link rel="stylesheet" href="./CSS/about-us-section.css">
@@ -27,7 +28,9 @@
 <body>
     
     <header class="header-container" role="banner"> 
+        
         <img id="logo" alt="company-logo" src="./assets/logo.png">
+
         <nav role="navigation" class="navbar" aria-label="Main navigation">
             <ul class="nav-list">
                 <li><a href="#AboutUs">About us</a></li>
@@ -36,6 +39,7 @@
                 <li><a href="#ContactUs">Contact us</a></li>
             </ul>
         </nav>
+
         <div class="social-links" aria-label="Social Media Links">
             <a href="https://www.facebook.com" 
             rel="noreferrer noopener" 
@@ -55,6 +59,10 @@
         <!-- Hero Section -->
 
         <section class="slide-show" aria-label="Image slideshow" role="region">
+
+            <!-- In order to create a slideshow I need a container and the images sharing the same class name -->
+            <!-- The buttons mush be inside the same container the images are, so their absolute position will -->
+            <!-- be relative to this container, I got the script from w3school -->
             <div class="slides" aria-live="polite">
                 <img class="mySlides" src="./assets/images/slideshow/car-wash.webp" loading="lazy" alt="Washing car">
                 <img class="mySlides" src="./assets/images/slideshow/interior.webp" loading="lazy" alt="Car interior">
@@ -74,7 +82,10 @@
         <!-- About us Section -->
 
         <section class="AboutUs" id="AboutUs" aria-labelledby="about-title">            
+            
             <img id="AboutUs-img" src="./assets/images/homepage/AboutGarage.webp" loading="lazy" alt="Luxurious car inside a garage">
+            
+            <!-- Area containing the text of this section -->
             <article class="AboutUs-info">
                 <h2 id="about-title">About Us</h2>
                 <p>
@@ -92,10 +103,13 @@
         <!-- Services Section -->
 
         <section class="services-container" id="Services" aria-labelledby="services-title">
+
             <article class="item service-header">
                 <h2 id="services-title">Premium washing service</h2>
                 <h3>Our Services</h3>
             </article>
+
+            <!-- Area images and description of every service-->
             <article class="item item-1">
                 <img src="assets/images/icons/car-wash.svg" loading="lazy" alt="Car wash icon">
                 <p>Exterior Washing</p>
@@ -115,10 +129,14 @@
         
         <!-- Price Section -->
         <section class="price-container" id="Price" aria-labelledby="price-title">
+
+            <!-- This is the text before the plan boxes -->
             <article class="plan price-header">
                 <h2 id="price-title">Washing Plans</h2>
                 <h3>Choose your plan</h3>
             </article>
+
+            <!-- These are my classes for each item -->
             <article class="plan plan-1">
                 <div class="plan-content">
                     <h3>Basic cleaning</h3>
@@ -167,7 +185,10 @@
         <!-- Contact form Section -->
 
         <section class="ContactUs-container" id="ContactUs" aria-labelledby="contact-title">            
+            
             <img id="ContactUs-img" src="./assets/images/homepage/car-washing.webp" loading="lazy" alt="Black car being washed">
+            
+            <!-- Form area of this section -->
             <article class="contact-us-form">
                 <h2 id="contact-title">Request car wash</h2>
                 <form class="request-info-form" role="form">
@@ -194,9 +215,11 @@
                     <p id="inquiry-help">Write your inquiry here.</p>
 
                 </form>
+
                 <div class="request-button-container">
                     <button class="request-button">Request</button>
                 </div>
+
                 <div class="contact-booking">
                     <p>To book call</p>
                     <h3>+1 832-604-7679</h3>
@@ -218,6 +241,8 @@
             </address>
 
             <p class="footer-copy">&copy; 2026 Accessible Design Co. All rights reserved.</p>
+
+            <!-- Social links with the clickable logo -->
             <div class="social-links" aria-label="Social Media Links">
             <a href="https://www.facebook.com" 
             rel="noreferrer noopener" 
