@@ -1,3 +1,4 @@
+/* Stack from here so they won't look too close to each other*/
 @media (max-width: 1162px) {
     /* 3 columns to stack */
     .price-container {
@@ -13,6 +14,7 @@
 
     .plan-1, .plan-2, .plan-3 {
         width: auto;
+        /* This won't deform the boxes */
         height: 650px;
         min-width: 255px;
         padding: 1rem 1rem;
@@ -20,6 +22,13 @@
 
 }
 
+/* 
+    General screen settings for smaller screens 
+    stacking boxes, changing the navigation bar to an index
+    making look better
+    keeping a good looking on slides
+    changing images sizes to fit smaller screens
+    */
 @media (max-width: 768px) {
     .header-container{
         position:static;
@@ -61,8 +70,6 @@
         max-height: 150px;
     }
 
-    
-
     /* lanscape to vertical */
     .AboutUs {
         flex-direction: column;
@@ -98,9 +105,10 @@
     }
 }
 
-@media (max-width: 341px) {
-    
+/* Prices boxes fit on smaller screens */
+@media (max-width: 341px) {    
     .plan-1, .plan-2, .plan-3 {
         min-width: 1rem;
+        font-size: 1rem;
     }
 }
