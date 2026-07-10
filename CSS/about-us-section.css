@@ -28,6 +28,7 @@ article > h2{
     font-size: 2rem;
 }
 
+/* Flex box container for the whole text on this section */
 .AboutUs-info{
     display: flex;
     justify-content: center;

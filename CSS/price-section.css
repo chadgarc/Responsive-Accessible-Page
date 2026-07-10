@@ -1,4 +1,10 @@
-
+/*  
+    Grid box to create a matrix for prices pannels a flex box is useful too
+    But I want to practice more the grid template area and its integration
+    with flex, later for smaller screen I'll stack them changing
+    the matrix configuration
+    The same configuration of Services Section
+*/
 .price-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -11,32 +17,12 @@
     scroll-margin-top: 5.5rem;
 }
 
+/*  
+    This is how I link every position in the matrix with every element or
+    container
+*/
 .price-header{
     grid-area: header;
-}
-
-.plan{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
-.plan-1, .plan-2, .plan-3 {
-    background-color: white;
-    width: auto;
-    height: 450px;
-    min-width: 255px;
-    border-radius: 20px;
-    padding: 1rem 1rem;
-    box-shadow: 10px 10px 30px darkgray;
-    border: solid royalblue;
-}
-
-.plan > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .plan-1{
@@ -51,9 +37,37 @@
     grid-area: pres;
 }
 
+/* General container of flex boxes, I want them as a column */
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* 
+    To change the flex box on the 3 plans only
+    The size of the box must contain the button all the time so I need
+    a fixed or adaptable size for containers
+*/
+.plan-1, .plan-2, .plan-3 {
+    background-color: white;
+    width: auto;
+    height: 450px;
+    min-width: 255px;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    box-shadow: 10px 10px 30px darkgray;
+    border: solid royalblue;
+}
+
+/*  I set the content inside flex boxes at the center
+    and I change bow the buttons inside look
+*/
 .plan-content{
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
 }
 

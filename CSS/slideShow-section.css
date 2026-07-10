@@ -1,4 +1,10 @@
-
+/* 
+    The main container of slide show section
+    I want it to cover most of the screen every time so I set a fixed
+    height
+    Position relative so I can use absoluto position for buttons and
+    put them at the same position even if the screen size change
+*/
 .slides{
     width: 100%;
     height: min(65vh, 600px);
@@ -12,6 +18,13 @@
     height: 100%;
 }
 
+/* 
+    Buttons configuration, transition time, how it looks, how it will be positioned
+    above images container that has a relative position so this absolute position
+    is inside to the main container
+    the z-index make it to be above the slides, is like setting a position from the 
+    back to the front
+*/
 .display-left, .display-right{
     position: absolute;
     top: 50%;
@@ -29,6 +42,7 @@
     transition: background-color .5s ease-in-out .1s;
 }
 
+/* Unique position of each button */
 .display-right{
     right: 1%;
 }
@@ -37,11 +51,17 @@
     left: 1%;
 }
 
+/* 
+    I want to change the color to make it look better 
+    along the transition this creates an animation when the pointer is
+    above the button, or clicking it
+*/
 .display-left:hover, .display-right:hover{
     
     background-color: rgb(34, 78, 211);
 }
 
+/* This is another flex box, contain the name of the business on the first section */
 .business-name{
     display: flex;
     justify-content: center;

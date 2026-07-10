@@ -1,4 +1,7 @@
-
+/*  This container is a flex box, I want the items centered, with space 
+    around between innter flex boxes
+    And position sticky keeps the navigation bar visible around the page
+    so the user can change the current section every time*/
 .header-container {
     display: flex;
     align-items: center;

@@ -1,3 +1,4 @@
+/* Flex box to contain footer content */
 footer div{
     display: flex;
     flex-direction: column;

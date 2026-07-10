@@ -1,4 +1,9 @@
-
+/*  
+    Grid box to create a matrix for prices pannels a flex box is useful too
+    But I want to practice more the grid template area and its integration
+    with flex, later for smaller screen I'll stack them changing
+    the matrix configuration
+*/
 .services-container{
     background-color: white;
     display: grid;
@@ -12,20 +17,12 @@
     scroll-margin-top: 5.5rem;
 }
 
+/*  
+    This is how I link every position in the matrix with every element or
+    container
+*/
 .service-header{
     grid-area: head;
-}
-
-.item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.item img {
-    max-height: 200px;
-    width: 60%;
-    height: 100%;
 }
 
 .item-1{
@@ -38,4 +35,18 @@
 
 .item-3{
     grid-area: vacuuming;
+}
+
+/* General container of flex boxes, I want them as a column */
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* I need a fixed size for images on this section  */
+.item img {
+    max-height: 200px;
+    width: 60%;
+    height: 100%;
 }
