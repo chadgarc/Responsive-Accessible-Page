@@ -158,3 +158,11 @@ This project is for educational purposes.
 ## 🙌 Author
 
 **Christian — Supreme Car Wax Project**
+
+## Website preview
+
+**You can check this page at netlify**
+https://responsive-accesible-page-practice.netlify.app/
+
+**Or Github**
+https://chadgarc.github.io/Responsive-Accessible-Page/
