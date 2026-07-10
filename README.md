@@ -23,22 +23,38 @@ My goal was to recreate the look and feel of the template from the header down t
 
 ## 🧩 Project Structure
 
-SupremeCarWax/
-│── index.html
-│── CSS/
-│   ├── navbar.css
-│   ├── slideShow.css
-│   ├── AboutUs.css
-│   ├── ContactUs.css
-│   ├── Price.css
-│   ├── services.css
-│   └── general.css
-│── Scripts/
-│   └── slideShow.js
-│── assets/
-│   ├── logo.png
+```bash
+Responsive-Accessible-Page/
+├── assets/
 │   ├── images/
-│   └── icons/
+│   │   ├── homepage/
+│   │   │   ├── AboutGarage.webp
+│   │   │   ├── car-washing.webp
+│   │   │   └── garage.webp
+│   │   ├── icons/
+│   │   │   ├── car-wash.svg
+│   │   │   ├── seat-cleaning.svg
+│   │   │   └── vaccuming.svg
+│   │   └── slideshow/
+│   │       ├── car-wash.webp
+│   │       ├── interior.webp
+│   │       └── sponge-car-wash.webp
+│   └── logo.png
+├── CSS/
+│   ├── about-us-section.css
+│   ├── contact-us-section.css
+│   ├── footer-section.css
+│   ├── general.css
+│   ├── navigation-bar-section.css
+│   ├── price-section.css
+│   ├── screenSettings.css
+│   ├── services-section.css
+│   └── slideShow-section.css
+├── Scripts/
+│   └── slideShow.js
+├── index.html
+└── README.md
+```
 
 
 ---
