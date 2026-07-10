@@ -44,7 +44,7 @@
     /* This will be the configuration of my navbar while this screen is in use */
     .nav-list {
         flex-direction: column;
-        height: 30vh;
+        height: 35vh;
         gap: 3rem;
     }
 
