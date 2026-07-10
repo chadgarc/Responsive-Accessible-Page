@@ -1,32 +1,39 @@
-
+/* Aboud Us section container is a flex box, I just added some attributes to
+make it look as I wish */
 .AboutUs{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-left: 10rem;
     padding-right: 10rem;
-    gap: 10rem;
-    padding: 5rem;
+    gap: 10%;
+    padding: 10%;
     scroll-margin-top: 5.5rem;
 }
 
+/* Image object, I set the limits on size, and using contain will keep the same ratio */
 #AboutUs-img{
     object-fit: contain;
-    max-width: 500px;
+    max-width: 300px;
     width: 100%;
 }
 
+/* I just want to change the color of every h2 inside an article section
+I centered the h2 and chose the font size*/
 article > h2{
     display: flex;
     color: rgb(0, 20, 80);
     justify-content: center;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
-article{
+.AboutUs-info{
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: justify;
+    width: 20rem;
 }
 
 .map-button-container{

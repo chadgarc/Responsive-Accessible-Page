@@ -5,7 +5,7 @@
     grid-template-areas: 
         "header header header"
         "basic exec pres";
-    column-gap: 5rem;
+    column-gap: 5%;
     padding: 4rem 2rem;
     place-items: center;
     scroll-margin-top: 5.5rem;
@@ -24,11 +24,11 @@
 
 .plan-1, .plan-2, .plan-3 {
     background-color: white;
-    height: 80%;
     width: auto;
-    max-width: 350px;
+    height: 450px;
+    min-width: 255px;
     border-radius: 20px;
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
     box-shadow: 10px 10px 30px darkgray;
     border: solid royalblue;
 }
